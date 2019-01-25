@@ -1,0 +1,1 @@
+This project created for basic authenticated nodejs application with pug view engine
