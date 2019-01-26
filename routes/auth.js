@@ -6,6 +6,8 @@ const User = require('../models/userModel');
 router.post('/sign-up', function(req, res, next) {
   var newUser = req.body;
 
+
+  // TODO if user already exist
   User.create(newUser)
     .then(function(user) {
       res.json(user);

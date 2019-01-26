@@ -14,5 +14,10 @@ var UserSchema = new Schema({
   },
 });
 
+UserSchema.methods = {
+  authenticate: function(plainTextPword) {
+    return plainTextPword == this.password;
+  }
+};
 
 module.exports = mongoose.model('user', UserSchema);

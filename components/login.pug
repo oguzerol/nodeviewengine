@@ -1,0 +1,12 @@
+block content
+  .container
+      .row
+         .col
+            form#login-form(method='POST' action='/login')
+               div.form-group
+               label(for='username') Name:
+               input#name.form-control(type='text', placeholder='first and last' name='username')
+               div.form-group
+               label(for='pw') Password:
+               input#pw.form-control(type='password' name='password')
+               button.btn.btn-primary.login-button(type='submit') Sign up
