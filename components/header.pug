@@ -1,6 +1,12 @@
 header
+
    .container
       .row
          .col
             nav.navbar
-               a(href='/') Homepage
+               - var authorised = false
+               #user
+               if authorised
+                  a(href='/profile') Profile
+               else
+                  a(href='/login') Login
